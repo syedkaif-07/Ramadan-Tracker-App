@@ -15,13 +15,13 @@ function Dashboard() {
     <>
       <div className="flex">
 
-        <div className="flex-1/4">
+        <div className="lg:flex-1/4">
           <AddSidebar menuOpen={menuOpen} />
         </div>
 
-        <div className="flex-3/3 ">
+        <div className="lg:flex-3/3 flex-3/4 ">
           <Header toggleMenu={toggleMenu} menuOpen={menuOpen}  />
-          <DashboardContent toggleMenu={toggleMenu} menuOpen={menuOpen} />
+          <DashboardContent  />
         </div>
       </div>
     </>

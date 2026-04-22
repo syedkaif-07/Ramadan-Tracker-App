@@ -3,7 +3,7 @@ import { ArrowRight, Goal, Target } from "lucide-react";
 export default function ActiveGoals() {
   return (
     <>
-    <div className='  bg-white rounded-3xl shadow-sm border border-red-500 mt-5 p-5'>
+    <div className='  bg-white rounded-3xl shadow-sm border border-red-500 p-5'>
         <div className='flex justify-between  '>
             <h2 className='text-2xl font-bold'>Active Goals</h2>
             <span  className='flex items-center text-green-600'>View All <ArrowRight size={15} color='green'/></span>

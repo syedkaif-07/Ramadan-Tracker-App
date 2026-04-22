@@ -5,7 +5,7 @@ const Card = ({title,completedDays, totalDays , para , Slash , Per , Icon , show
 
   return (
    
-    <div className="p-6 bg-white rounded-3xl shadow-sm font-sans">
+    <div className="p-6 bg-white rounded-3xl shadow-sm font-sans border border-cyan-900">
       {/* Header Section */}
       <div className="flex justify-between items-start mb-6">
         <div className="p-3 bg-blue-50  rounded-2xl">

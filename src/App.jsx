@@ -8,9 +8,9 @@ import Dashboard from './pages/Dashboard'
 
 function App() {
 
-  const timestamp = Date.now(); // ya API se mila hua
-  const date = new Date(timestamp);
-  console.log(date);
+  // const timestamp = Date.now(); // ya API se mila hua
+  // const date = new Date(timestamp);
+  // console.log(date);
 
   return (
     <>

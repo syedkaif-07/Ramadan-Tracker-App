@@ -8,7 +8,7 @@ export default function EidCounter() {
     <>
     <div className=' border-t-4 border-t-green-600 relative  h-full  rounded-2xl ' >
         <div className='bg-[#121A2D] absolute w-full  h-full  rounded-lg '>
-            <div className='flex  gap-6 justify-center items-center mt-25 flex-col'>
+            <div className='flex  gap-6 justify-center items-center  flex-col'>
                 <h2 className='text-lg font-bold text-green-300'>Countdown to Eid</h2>
                 {/* time */}
                 

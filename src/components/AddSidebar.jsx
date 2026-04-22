@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
 import { Menu, X, Sun, Moon, Timer, CheckSquare, Scroll, BookOpen, Target, Settings, LayoutDashboard, HeartHandshake, Calendar } from "lucide-react";
 import Header from './Header';
 import Banner from './Banner';
@@ -17,12 +18,13 @@ function AddSidebar({ menuOpen }) {
     return (
 
         <div
-            className={` fixed h-screen overflow-scroll  [scrollbar-width:none]   border-r border-r-gray-300 flex flex-col   top-0 left-0 w-80  bg-white shadow-md transform ${menuOpen ? "translate-x-0" : "-translate-x-full "
+            className={` fixed h-full overflow-scroll  [scrollbar-width:none]   border-r border-r-gray-300 flex flex-col   top-0 left-0 w-80  bg-white shadow-md transform ${menuOpen ? "translate-x-0" : "-translate-x-full "
                 } lg:translate-x-0 transition-transform duration-300 z-50 `}
         >
             <h2 className="p-4 text-2xl font-bold border-b border-gray-200"><span>🌙</span> Ibadah<span className='text-green-600'>Tracker</span></h2>
 
             <nav className="p-4 space-y-3 ">
+                
                 <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-200 ">
                     <LayoutDashboard size={18} /> Dashboard
                 </a>
