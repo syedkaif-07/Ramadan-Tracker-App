@@ -24,7 +24,7 @@ function AddSidebar({ menuOpen }) {
             <h2 className="p-4 text-2xl font-bold border-b border-gray-200"><span>🌙</span> Ibadah<span className='text-green-600'>Tracker</span></h2>
 
             <nav className="p-4 space-y-3 ">
-                
+
                 <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-200 ">
                     <LayoutDashboard size={18} /> Dashboard
                 </a>
@@ -55,9 +55,15 @@ function AddSidebar({ menuOpen }) {
                 <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-200">
                     <Settings size={18} /> Settings
                 </a>
-
-                <div className='flex items-end justify-start h-60'>
-                    <button onClick={() => setDarkMode(!darkMode)} className='bg-lime-50 shadow py-1 px-3 cursor-pointer  gap-1 rounded  text-center mx-3.5 flex items-center hover:bg-gray-200  border-2 border-gray-200 transition-all mt-60 '> {darkMode ? <Sun size={18} /> : <Moon size={18} />}Dark Mode</button>
+                    
+                <div className="fixed bottom-4  z-50">
+                    <button
+                        onClick={() => setDarkMode(!darkMode)}
+                        className="bg-lime-50 shadow py-2 px-3 cursor-pointer gap-1 rounded flex items-center hover:bg-gray-200 border border-gray-200 transition-all whitespace-nowrap"
+                    >
+                        {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+                        <span className="ml-1">Dark Mode</span>
+                    </button>
                 </div>
             </nav>
         </div>

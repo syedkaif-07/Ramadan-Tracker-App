@@ -3,7 +3,7 @@ import { Menu, X, Sun, Moon, Timer, CheckSquare, Scroll, BookOpen, Target, Setti
 export default function Banner() {
 
     return (
-            <div className=" border border-red-500  flex items-center justify-center "> 
+            <div className="   flex items-center justify-center "> 
                 <div className=" relative bg-[#0B9580] text-white p-15 rounded-2xl w-full ">
                 <Moon className="bg-[#09957900]  absolute top-4 right-4 text-cyan-200 z-0" size={170} />
                 <h2 className="text-2xl">Salaam, Guest</h2>

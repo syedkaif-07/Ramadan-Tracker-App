@@ -12,7 +12,7 @@ export default function DashboardContent() {
 
     return (
 
-        <div className='border border-red-500 w-full p-8 h-full '>
+        <div className=' w-full p-8 h-full '>
             <Banner />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-6 mt-2.5 ">
                 <Card title={'FASTING'} showProgress={true} completedDays={0} Slash={"/"} totalDays={30} para={"Days Completed"} />
@@ -23,41 +23,41 @@ export default function DashboardContent() {
 
 
 
-            {/* QuickShortCard */}
-            <div className='lg:flex gap-2 mt-2.5'>
-            <div className=' rounded-3xl  shadow-xl   border   bg-white  '>
-                <h2 className="text-2xl text-black font-bold p-5" >Qucik Shorts</h2>
-                <div className=' grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2  gap-6 ' >
-                    <QSCard color="bg-red-200" Icon={<Calendar />} title={"Daily Log"} />
-                    <QSCard color="bg-blue-200" Icon={<Moon />} title={"Duas"} />
-                    <QSCard color="bg-red-100" Icon={<Target />} title={"My Goals"} />
-                    <QSCard color="bg-red-100" Icon={<Heart />} title={"Donate"} />
+            {/*End Section*/}
+
+            <div className=' grid grid-cols-12 gap-10 w-full mt-2.5 '>
+                <div className=' col-span-12 lg:col-span-8 '>
+                    <div className=' border border-white bg-white rounded-2xl p-2 shadow-sm mt-2.5 '>
+                        <h2 className='font-semibold text-xl'>Quick Shortcuts</h2>
+                        <div className="grid lg:grid-cols-4 mt-5 md:grid-cols-4 grid-cols-2">
+                            <QSCard color="bg-blue-100" Icon={<Calendar  className=" stroke-blue-500"  />} title={"Daily Log"} />
+                            <QSCard color="bg-pink-100" Icon={<Moon className=" stroke-purple-500"  />} title={"Duas"} />
+                            <QSCard color="bg-pink-100" Icon={<Target className=" stroke-orange-500"   />} title={"My Goals"} />
+                            <QSCard color="bg-pink-100" Icon={<Heart className=" stroke-red-500"   />} title={"Donate"} />
+                        </div>
+                        </div>
+                        
+                        {/* Active Goals */}
+                        <div className=' mt-2.5'>
+                            <ActiveGoals />
+                        </div>
+                    </div>
+                    <div className=' col-span-12 lg:col-span-4 mt-2.5 shadow-sm'>
+                        <EidCounter />
+                    </div>
+
                 </div>
-                 </div> 
-                <div className='lg:flex-1/5 '>
-                     <EidCounter />  
-                </div>
-            </div>
 
 
 
 
-            <div className='grid grid-cols-12  mt-2.5 '>
-                <div className='col-span-8'>
-                    <ActiveGoals />
-                </div>
-            </div>
-
-
-
-
-            {/* Active Goals */}
+                {/* Active Goals */}
 
 
 
 
 
-            {/* <div className="grid grid-cols-12 border border-red-700">
+                {/* <div className="grid grid-cols-12 border border-red-700">
   <div className="col-span-8 border border-amber-800">
     Big box
   </div>
@@ -67,10 +67,10 @@ export default function DashboardContent() {
   </div>
 </div> */}
 
-            
-        </div>
 
-    )
+            </div>
+
+            )
 }
 
 
