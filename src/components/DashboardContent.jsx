@@ -9,9 +9,9 @@ import ActiveGoals from './ActiveGoals'
 import QSCard from './QSCard'
 
 export default function DashboardContent() {
-
     return (
-
+          <>
+  
         <div className=' w-full p-8 h-full '>
             <Banner />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-6 mt-2.5 ">
@@ -50,12 +50,7 @@ export default function DashboardContent() {
 
 
 
-
-                {/* Active Goals */}
-
-
-
-
+                {/* Example grid Boxes */}
 
                 {/* <div className="grid grid-cols-12 border border-red-700">
   <div className="col-span-8 border border-amber-800">
@@ -69,6 +64,8 @@ export default function DashboardContent() {
 
 
             </div>
+
+                    </>
 
             )
 }

@@ -9,7 +9,7 @@ export default function QSCardContainer() {
     <div className=" border border-blue-400">
       
       <div className="grid-cols-12 grid-rows-12">
-      <div className=" ">
+      <div>
         <QSCard color="bg-red-200" Icon={<Calendar />} title={"Daily Log"} />
         <QSCard color="bg-blue-200" Icon={<Moon />} title={"Duas"} />
         <QSCard color="bg-red-100" Icon={<Target />} title={"My Goals"} />
