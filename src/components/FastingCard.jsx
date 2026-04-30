@@ -9,7 +9,7 @@ export default function FastingCard() {
        <p className='font-semibold'>Fasting Status</p> 
        <p className='text-gray-500'>Tap to mark as Completed</p>
      </div>
-       <Star  className='bg-gray-100 rounded-2xl p-1' />
+       <Star className='bg-gray-100 rounded-2xl p-1' />
     </div>
     </div>
 

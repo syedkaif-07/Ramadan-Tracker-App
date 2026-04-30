@@ -24,30 +24,31 @@ export default function Profile() {
   return (
     <>
       {/* SIDEBAR */}
-      <div className="grid grid-cols-5">
-        <div className="col-span-1">
+      <div className="grid grid-cols-2 md:grid-cols-5">
+        <div className="col-span-1 ">
         {/* <div className="lg:flex-1/4 col-span-1"> */}
           <AddSidebar menuOpen={menuOpen} />
         </div>
 
         {/* <div className="lg:flex-3/3 flex-3/4 col-span-4"> */}
-        <div className="col-span-2  col-start-3">
+        <div className="col-span-5 ">
           <Header toggleMenu={toggleMenu} menuOpen={menuOpen} />
-
-          {/* <DashboardContent  /> */}
-          {/* DashboardContent */}
         
-            <div  >
+         
+          {/* DashboardContent */}
+            </div>
+            <div className='col-span-5 lg:col-span-2 lg:col-start-3 '>
+            <div >
               <DayTracker />
             </div>
      
           
           {/* <div className='flex justify-center items-center'> */}
           {/* Parent */}
-          <div className='grid grid-rows-5 grid-cols-2   gap-10 pt-10'>
+          <div className=' grid lg:grid-cols-2 md:grid-cols-2  gap-10 pt-10 p-8'>
           {/* <div className='grid  row-span-12 col-span-12 border grid-cols-2 gap-10'> */}
           {/* FastingCard */}
-          <div className='row-span-1'>
+          <div className='row-span-1 '>
             <FastingCard />
           </div>
             {/* HydrationCard */}
@@ -58,7 +59,7 @@ export default function Profile() {
             <div className='row-span-3 '>
             <PrayerLog />
             </div>
-            <div className=' row-span-4 '>
+            <div className=' row-span-2  '>
               <ReflectionCard />
             </div>
           </div>

@@ -26,7 +26,6 @@ export default function QSCardContainer() {
       </div>
 
             {/* QuickSection*/}
-
             
             {/* QuickShortCard */}
             <div className=" border border-blue-400 mt-2.5">

@@ -28,7 +28,7 @@ import Banner from "../components/Banner";
           <Header toggleMenu={toggleMenu} menuOpen={menuOpen}  />
 
           {/* <DashboardContent  /> */}
-
+            
             <div className=' w-full p-8 h-full '>
             <Banner />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-6 mt-2.5 ">
@@ -61,7 +61,6 @@ import Banner from "../components/Banner";
                     <div className=' col-span-12 lg:col-span-4 mt-2.5 shadow-sm'>
                         <EidCounter />
                     </div>
-
                 </div>
 
 
@@ -80,8 +79,6 @@ import Banner from "../components/Banner";
 
 
             </div>
-
-          
         </div>
       </div>
     </>

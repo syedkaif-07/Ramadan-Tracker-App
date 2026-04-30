@@ -3,10 +3,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function DayTracker() {
   return (
-    <div className='w-full flex justify-center mt-6 '>
+    <div className='w-full flex justify-center mt-6 md:p-0 lg:p-0 p-2 '>
 
   {/* Main Container */}
-  <div className='w-[600px] bg-white border-white shadow-md rounded-xl flex items-center justify-between px-4 py-3'>
+  <div className='w-[800px] bg-white border-white shadow-md rounded-xl flex items-center justify-between px-4 py-3'>
 
     {/* Left Arrow */}
     <button className="p-2 rounded-full hover:bg-gray-100">

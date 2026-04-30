@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function ReflectionCard() {
   return (
-  <div className='  p-2 gap-2 bg-white border rounded-2xl border-white  shadow-sm h-full '>
+  <div className='p-2 gap-2 bg-white border rounded-2xl border-white  shadow-sm  '>
         <div className='flex gap-2'>
-            <div className='h-6 w-1  bg-blue-500 rounded-2xl  '/>
+            <div className='h-6 w-1  bg-blue-500 rounded-2xl '/>
         <h2 className='font-semibold'>Reflections</h2> 
         </div>
         {/* Content */}
